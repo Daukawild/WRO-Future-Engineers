@@ -1,0 +1,2698 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>3.1 Class Discussion - LEGO Robotics</title><meta property="og:site_name" content="LEGO Robotics" />
+<meta property="og:title" content="3.1 Class Discussion" />
+<meta property="og:description" content="Item #1 : Robot Sensors Sensors are used to measure a physical quantity, and then convert it into a usable signal that can be used by your robot.   When designing your robot it is important for you..." />
+<meta property="og:image" content="http://milweelegorobotics.weebly.com/uploads/3/7/5/4/37549473/ev3-sensors_orig.png" />
+<meta property="og:image" content="http://milweelegorobotics.weebly.com/uploads/3/7/5/4/37549473/sound-sensor_orig.png" />
+<meta property="og:image" content="http://milweelegorobotics.weebly.com/uploads/3/7/5/4/37549473/color-sensor.png?186" />
+<meta property="og:image" content="http://milweelegorobotics.weebly.com/uploads/3/7/5/4/37549473/ultrasonic-sensor_orig.png" />
+<meta property="og:image" content="http://milweelegorobotics.weebly.com/uploads/3/7/5/4/37549473/sensor3_orig.jpg" />
+<meta property="og:image" content="http://milweelegorobotics.weebly.com/uploads/3/7/5/4/37549473/gyro-sensor_orig.png" />
+<meta property="og:image" content="http://milweelegorobotics.weebly.com/uploads/3/7/5/4/37549473/ir-sensor.jpg?203" />
+<meta property="og:image" content="http://milweelegorobotics.weebly.com/uploads/3/7/5/4/37549473/rotations_orig.png" />
+<meta property="og:url" content="http://milweelegorobotics.weebly.com/31-class-discussion.html" />
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/sites.css?buildTime=1495577954" />
+<link rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/old/fancybox.css?1495577954" />
+<link rel="stylesheet" type="text/css" href="/files/main_style.css?1495630965" title="wsite-theme-css" />
+<link href='//fonts.googleapis.com/css?family=Actor&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {color:#5fa233 !important;}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+<style type='text/css'>
+.wsite-header {
+	background-image: url(/uploads/3/7/5/4/37549473/header_images/1471804141.jpg) !important;
+	background-position: 0 0 !important;
+}
+</style>
+
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1495577954&"></script>
+<script src="//cdn2.editmysite.com/js/site/main.js?buildTime=1495577954"></script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1495577954&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"><!--
+	
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"447396249184158745","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"749867341535299312","title":"About","url":"about.html","target":"","nav_menu":false,"nonclickable":false},{"id":"866141486731399697","title":"Lessons","url":"lessons.html","target":"","nav_menu":false,"nonclickable":false},{"id":"330512439556869186","title":"Contact","url":"contact.html","target":"","nav_menu":false,"nonclickable":false},{"id":"284546745425362793","title":"Blog","url":"blog.html","target":"","nav_menu":false,"nonclickable":false}],
+			"596451044939007422",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="wsite-theme-light short-header-page  wsite-page-31-class-discussion"><div id="header-wrap">
+	<div id="page">
+		<div id="header-container">
+			<table id="header">
+				<tr>
+					<td id="logo"><span class="wsite-logo">
+
+	<a href="/">
+	
+	<span id="wsite-title">LEGO Robotics</span>
+	
+	</a>
+
+</span></td>
+					<td id="header-right">
+						<table>
+							<tr>
+								<td class="phone-number"></td>
+								<td class="social"></td>
+							</tr>
+						</table>
+						<div class="search"></div>
+					</td>
+				</tr>
+			</table>
+			<div id="topnav">
+				<ul class="wsite-menu-default">
+						<li id="pg447396249184158745" class="wsite-menu-item-wrap">
+							<a
+										href="/"
+								class="wsite-menu-item"
+								>
+								Home
+							</a>
+							<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-694906075957862308"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/syllabus1.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Syllabus
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+						</li>
+						<li id="pg749867341535299312" class="wsite-menu-item-wrap">
+							<a
+										href="/about.html"
+								class="wsite-menu-item"
+								>
+								About
+							</a>
+							<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-414034389606476647"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/syllabus.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Syllabus
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+						</li>
+						<li id="pg866141486731399697" class="wsite-menu-item-wrap">
+							<a
+										href="/lessons.html"
+								class="wsite-menu-item"
+								>
+								Lessons
+							</a>
+							<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-502636407734628693"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/engineering-design-process.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Engineering Design Process
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-880553772563987186"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/11-welcome-to-robotics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.1 Welcome to Robotics
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-243112730662860318"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/11-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.1 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-144596155180619373"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/11-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.1 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-169178611205193163"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/12-introduction-to-the-robotics-lab.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.2 Introduction to the Robotics Lab
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-955443102231098690"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/12-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.2 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-229200585478125487"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/12-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.2 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-527486288313814265"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/13-what-is-a-robot.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.3 What is a Robot
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-282951945411246373"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/13-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.3 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-797261769440282967"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/13-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.3 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-990100233187372199"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/14-whats-in-the-box.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.4 What's in the Box
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-606394790210046543"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/14-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.4 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-139328933367213396"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/14-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.4 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-822414349871521494"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/15-introduction-to-the-engineering-design-process.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.5 Introduction to the Engineering Design Process
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-263460639998562701"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/15-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.5 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-174442093947785484"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/15-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.5 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-586366473718744300"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/16-eng-design-project-d1.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.6 Eng Design Project D1
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-679224005665191639"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/16-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.6 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-718403649427804671"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/16-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.6 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-165927374626001339"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/17-eng-design-project-d2.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.7 Eng Design Project D2
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-276451383717649619"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/17-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.7 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-506609113671893559"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/17-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.7 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-740376735780216908"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/18-riley-rover.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.8 Riley Rover
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-580085975924383326"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/18-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.8 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-231101750685709342"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/18-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.8 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-707128461422305785"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/principles-of-programming.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Principles of Programming
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-139081590404997374"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/21-principles-of-programming.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.1 Principles of Programming
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-903058644969046180"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/21-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.1 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-551069166170096168"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/21-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.1 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-398090079616916028"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/22-programming-movement---turns.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.2 Programming Movement - Turns
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-492928807782937139"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/22-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.2 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-706810507336267113"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/22-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.2 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-351594073162300627"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/23-programming-turns-day-1.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.3 Programming Turns (Day 1)
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-911152903963729119"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/23-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.3 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-940169476929697069"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/23-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.3 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-749817661698552273"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/24-programming-turns-day-2.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.4 Programming Turns (Day 2)
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-199165459590289719"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/24-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.4 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-274481187196312879"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/24-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.4 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-672266306797770216"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/25-programming-turns-day-3.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.5 Programming Turns (Day 3)
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-803109895516092560"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/25-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.5 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-485257783184260057"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/25-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.5 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-966004807254479806"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/26-critical-thinking.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.6 Critical Thinking
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-908704101656490008"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/26-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.6 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-377214643463402019"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/26-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.6 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-871856919751066852"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/27-programming-using-circumference-day-1.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.7 Programming Using Circumference (Day 1)
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-275464192997427423"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/27-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.7 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-182122658976581526"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/27-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.7 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-144642398241163143"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/28-programming-using-circumference-day-2.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.8 Programming Using Circumference (Day 2)
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-842459572104746320"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/28-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.8 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-565262102577369721"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/28-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.8 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-418647167951082680"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/29-programming-using-circumference-day-3.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.9 Programming Using Circumference (Day 3)
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-534260490710796547"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/29-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.9 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-403245075731219087"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/29-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.9 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-424643047826071216"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/210-circumference-assessment.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.10 Circumference Assessment
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-121387627806756458"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/210-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.10 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-190579466244614652"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/210-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.10 Daily Activity
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-886491929354433961"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/210-circumference-quiz.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.10 Circumference Quiz
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-101266759331556845"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/robot-sensors.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Robot Sensors
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-102344100472502206"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/31-intro-to-sensors.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.1 Intro to Sensors
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-596451044939007422"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="/31-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.1 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-378533670573259445"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/31-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.1 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-240129657295719009"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/32-programming-sound-sensor-day-1.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.2 Programming Sound Sensor Day 1
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-552969854490777563"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/32-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.2 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-756033418413228382"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/32-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.2 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-548911817411607947"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/33-programming-sound-sensor-day-2.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.3 Programming Sound Sensor Day 2
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-917350375506396919"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/33-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.3 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-438185213984665677"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/33-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.3 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-931918794718292365"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/34-programming-sound-sensor-day-3.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.4 Programming Sound Sensor Day 3
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-367617521633215206"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/34-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.4 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-593841142614342717"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/34-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.4 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-861607810355477510"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/35-programming-color-sensor-day-1.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.5 Programming Color Sensor Day 1
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-506942112784434012"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/35-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.5 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-808402979122829274"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/35-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.5 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-510311763503684451"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/36-programming-color-sensor-day-2.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.6 Programming Color Sensor Day 2
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-430493746891511783"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/36-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.6 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-574544134292721645"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/36-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.6 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-246547448507744411"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/37-programming-color-sensor-day-3.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.7 Programming Color Sensor Day 3
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-700213453264350795"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/37-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.7 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-809213557353685449"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/37-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.7 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-140001372273882229"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/38-programming-touch-sensor.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.8 Programming Touch Sensor
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-178980123619195744"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/38-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.8 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-955831225372746590"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/38-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.8 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-277384156878831045"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/39-programming-ultra-sonic-sensor.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.9 Programming Ultra Sonic Sensor
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-690478505502878962"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/39-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.9 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-491639792333993878"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/39-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.9 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-600924664485304036"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/mid-semester-exam-review.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Mid-semester Exam Review
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-297108947736386258"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/class-discussion1.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Class Discussion
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-714859998840635807"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/simple-machines.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Simple Machines
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-702975954724814150"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/41-intro-to-simple-machines.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.1 Intro to Simple Machines
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-262932288801936005"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/41-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.1 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-848214073105722736"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/41-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.1 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-749251521244713203"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/42-wedges-and-levers.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.2 Wedges and Levers
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-699205841620327747"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/42-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.2 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-393204941521060962"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/42-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.2 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-519211178192344600"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/43-inclined-plane--screw.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.3 Inclined Plane & Screw
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-409332607294850315"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/43-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.3 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-373594756928579751"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/43-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.3 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-240494407434984198"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/44-wheel-and-axel--pulley.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.4 Wheel and Axel & Pulley
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-486426563880133126"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/44-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.4 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-938651048114921132"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/44-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.4 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-335469348391529488"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/robot-design.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Robot Design
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-421398869961654340"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/51-intro-to-robot-design.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.1 Intro to Robot Design
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-549976901841794079"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/51-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.1 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-203709526613929977"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/51-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.1 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-579019577466684923"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/52-lego-robotics-building-challenge.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.2 LEGO Robotics Building Challenge
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-139116581776851808"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/52-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.2 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-503833017222348369"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/52-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.2 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-774456124901031013"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/53-lego-robotics-building-challenge.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.3 LEGO Robotics Building Challenge
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-511227209400349541"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/53-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.3 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-845872780709192284"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/53-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.3 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-704864004606860713"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/54-lego-robotics-building-challenge.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.4 LEGO Robotics Building Challenge
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-466323530450917644"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/54-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.4 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-235903555876467724"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/54-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.4 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-251957550793286169"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/engineering-principles.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Engineering Principles
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-174846016554526360"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/61-intro-to-engineering-principles.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.1 Intro to Engineering Principles
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-510260676988101565"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/61-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.1 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-459055226134010101"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/61-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.1 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-422942107383025458"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/62-final-design-project-day-1.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2 Final Design Project (Day 1)
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-191805919727635761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/62-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-549528483490465043"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/62-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-390613246679728250"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/63-final-design-project-day-2.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.3 Final Design Project Day 2
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-356426749760713281"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/63-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.3 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-880646108817607406"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/51-class-discussion1.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.1 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-639788974249823660"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/63-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.3 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-287974488671797820"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/64-intro-to-robot-design-day-3.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.4 Intro to Robot Design Day 3
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-385178529478942653"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/64-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.4 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-807954268576919041"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/65-intro-to-robot-design-day-4.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.5 Intro to Robot Design Day 4
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-310520857668962424"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/65-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.5 Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-673734455268950829"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/robot-applications.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Robot Applications
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-705042097531469684"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/71-intro-to-robot-applications.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.1 Intro to Robot Applications
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-499667194665142412"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/71-class-discussion.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.1 Class Discussion
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-817484606131019645"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/71-daily-activity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.1  Daily Activity
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-480248189373129825"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/exams.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Exams
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-493281880765974705"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="/semester-exam.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Semester Exam
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+						</li>
+						<li id="pg330512439556869186" class="wsite-menu-item-wrap">
+							<a
+										href="/contact.html"
+								class="wsite-menu-item"
+								>
+								Contact
+							</a>
+							
+						</li>
+						<li id="pg284546745425362793" class="wsite-menu-item-wrap">
+							<a
+										href="/blog.html"
+								class="wsite-menu-item"
+								>
+								Blog
+							</a>
+							
+						</li>
+				</ul>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="banner-wrap">
+	<div id="container">
+		<div id="banner-bot">
+			<div id="banner">
+				<div id="banner-mid">
+					<div id="banner-outer">
+						<div class="wsite-header"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="main-wrap">
+	<div id="page">
+		<div id="main">
+			<div id="content"><div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<h2 class="wsite-content-title"><font size="5" color="#6cb83a">Lesson 3.1:&nbsp;<font size="4"><font size="5">Introduction to LEGO Mindstorms EV3 Sensors</font></font><br />Class Discussion / New Material</font><br /><br /><font size="4" color="#508d24"><font size="4" color="#508d24"><font size="4" color="#508d24"><strong>Topic #3</strong>:&nbsp; </font>Robot Sensors<br /><font size="4" color="#508d24"><strong>Learning Goal #3</strong>: <font size="4"><font size="4"><font size="4">Student will be able to use sensors appropriately on a robot.</font></font></font></font></font></font><br /><br /><br /></h2>
+
+<div class="paragraph"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><font size="4"><font color="#508d24"><span style="font-weight:400"><span style="font-weight:400"><span style="font-weight:400"><span style="font-weight:400"><span><strong>Item #1</strong>: </span></span></span></span></span></font><span><span><span><span><span><font color="#508d24"><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>Robot Sensors</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font></span></span></span></span></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><font size="4" color="#508d24">Sensors are used to measure a physical quantity, and then convert it into a usable signal that can be used by your robot.</font><font size="4" color="#508d24">&nbsp; When designing your robot it is important for you to choose the correct sensor/s so that your robot will be able to function properly in its operating environment.&nbsp; </font><font size="4" color="#508d24">For example if you need your robot to sense an obstacle such as a wall you would want to use a Touch Sensor.&nbsp; By adding the proper sensor/s, your robot will be aware of its environment to the degree necessary to perform the assigned tasks.</font><font size="4" color="#508d24">&nbsp; Consequently, during the design process you must consider the environment in which your robot will operate along with its intended function and the required level of precision and accuracy, and only then select the required sensors. </font><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><br /><br /></div>
+
+<div class="paragraph"><font size="4" color="#508d24"><strong>Item #2</strong>: </font><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><font size="4"><span><span><span><span><span><font color="#508d24"><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font></span></span></span></span></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span><font size="4" color="#508d24">LEGO Mindstorms </font><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><span style="color:rgb(51, 51, 51); font-weight:400"><font size="4"><span><span><span><span><span><font color="#508d24"><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>EV3 Sensors</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font></span></span></span></span></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><font size="4" color="#508d24">View and learn what each of the EV3 Sensors looks like and what its function is.</font><br /></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="/uploads/3/7/5/4/37549473/ev3-sensors_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="paragraph"><br /><br /><br /></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div class="paragraph"><font size="4" color="#508d24">Sound Sensor:</font><br /><font color="#8d2424"><font size="4"><font color="#508d24">The Sound Sensor allows your LEGO Robot to "hear".&nbsp; </font><font size="4"><font color="#508d24">The Sound Sensor is able to measure noise levels in decibel</font></font><font color="#508d24">s (dB) and frequencies around 3 - 6 kHz (dBA) which is where the human ear is most sensitive.</font></font></font><br /></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="/uploads/3/7/5/4/37549473/sound-sensor_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div class="paragraph"><font size="3" color="#508d24"><font size="4">Color Sensor:<br />The Color Sensor can detect the color of a surface (Color Mode), the amount of light reflected by a surface (Reflected Intensity Mode), or the brightness of ambient light (Ambient Light Intensity Mode).&nbsp; You can use the&nbsp;<font size="3" color="#508d24"><font size="4">Color Sensor to detect the color of a surface, follow lines or respond to light signals.</font></font></font></font><br /><br /></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="/uploads/3/7/5/4/37549473/color-sensor.png?186" alt="Picture" style="width:186;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div class="paragraph"><font size="3" color="#508d24"><font size="4"><font size="3" color="#508d24"><font size="4">Ultrasonic Sensor:<br /><font size="3" color="#508d24"><font size="4"><font size="3" color="#508d24"><font size="4">The Ultrasonic Sensor</font></font></font></font> generates sound waves and reads their echo returns to <font size="3" color="#508d24"><font size="4"><font size="3" color="#508d24"><font size="4">detect </font></font></font></font>and measure the distance to objects.&nbsp; <font size="3" color="#508d24"><font size="4"><font size="3" color="#508d24"><font size="4"><font size="3" color="#508d24"><font size="4"><font size="3" color="#508d24"><font size="4">The Ultrasonic Sensor can function as a sonar by sending out single sound</font></font></font></font></font></font></font></font> waves. It can also listen for a sound wave which can be used to trigger programed event/s.</font></font></font></font><br /><br /></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="/uploads/3/7/5/4/37549473/ultrasonic-sensor_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div class="paragraph"><font color="#508d24" size="4">Touch Sensor:<br />The Touch Sensor allows you to "feel" by detecting whether the red button on the sensor is currently pressed or released.&nbsp; The EV3 retrieves this information and can use it in programs.&nbsp; For example, you could program your robot to activate claws whenever the Touch Sensor is pressed.</font><br /><br /></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="/uploads/3/7/5/4/37549473/sensor3_orig.jpg" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div class="paragraph"><font size="4" color="#508d24">Gyro Sensor:</font><br /><font size="4" color="#508d24">The Gyro Sensor measures the robot's rotational motion and changes in its orientation.&nbsp; You can use the Gyro Sensor to measure angles, create balancing robots and explore technology associated with navigation systems, game controllers and gyroscopic stabilized platforms.<br /></font><br /></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="/uploads/3/7/5/4/37549473/gyro-sensor_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div class="paragraph"><font size="3" color="#508d24"><font size="4"><font size="3" color="#508d24"><font size="4">Infrared Sensor (Home Version):<br />The Infrared Sensor allows you to "see" its surroundings by measuring the approximate distance to an object using infrared light.&nbsp; The <font size="3" color="#508d24"><font size="4"><font size="3" color="#508d24"><font size="4">Infrared Sensor gathers information using the infrared remote (beacon).&nbsp; It can: 1) detect which buttons on the remote you press; 2) how far away the remote is; and the relative direction from the robot to the remote.<br /></font></font></font></font></font></font></font></font><br /></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="/uploads/3/7/5/4/37549473/ir-sensor.jpg?203" alt="Picture" style="width:203;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div class="paragraph"><font color="#508d24" size="3"><font size="4"><font color="#508d24" size="3"><font size="4">Rotation Sensor:<br />The Rotation Sensor determines how many robot wheel rotations have been made and can be programmed to stop the robot wheels after a specified number of rotations.</font></font></font></font><br /><br /></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="/uploads/3/7/5/4/37549473/rotations_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="paragraph"><font color="#508d24" size="4"><strong><br />Item #3</strong>: LEGO Mindstorms EV3 Ports<br />All of these sensors, with the exception of the Rotation Sensor, are inputs to the LEGO Mindstorms EV3 and therefore should be connected to ports 1, 2, 3 or 4.&nbsp; The Rotation Sensor is associated with the motors and is therefore an output of the LEGO Mindstorms EV3 and should be connected to ports A, B, C or D.</font><br /><br /><br /></div>
+
+<div class="paragraph"><font color="#508d24" size="4"><strong>Item #4</strong>: Power Point Presentation<br />Presentation on LEGO Mindstorms EV3 <a href="/uploads/3/7/5/4/37549473/sensors_intro.ppt" target="_blank">Sensors</a>.</font><br /><br /><br /></div>
+
+<div class="paragraph"><font color="#508d24" size="4"><strong>Item #5</strong>: Programming Sensors Sound &amp; Touch Video (Alarm Clock Robot)<br />The following video shows how to <a href="https://www.youtube.com/watch?v=lJMzILxvGtA" target="_blank">Program LEGO Mindstorms EV3 Sound &amp; Touch and Sensors</a></font><br /><br /><br /></div>
+
+<div class="paragraph"><font color="#508d24" size="4"><strong>Item #6</strong>: Programming Loops Video</font><br /><font color="#508d24" size="4">Watch the video on <a href="https://www.youtube.com/watch?v=aNro_0R4854" target="_blank">How to Program Loops</a> using LEGO Mindstorms EV3</font><br /><br /><br /></div>
+
+<div class="paragraph"><font color="#508d24" size="4"><strong>Item #7</strong>: Programming Wait Blocks Video</font><br /><font color="#508d24" size="4">Watch the video on <a href="https://www.youtube.com/watch?v=OYGykxZUsu4" target="_blank">How to Program Wait Blocks</a> using LEGO Mindstorms EV3 Ultrasonic Sensor</font><br /><br /><br /></div>
+
+<div class="paragraph"><font color="#508d24" size="4"><strong>Item #8</strong>: Programming Loop and Wait Blocks Video<br />Watch the video on <a href="https://www.youtube.com/watch?v=EaykkCvQA2g" target="_blank">How to Program Loop, Wait Block and Ultrasonic Sensor</a> using LEGO Mindstorms EV3 Ultrasonic Sensor</font><br /><br /><br /><br /></div>
+
+<div class="paragraph"><a href="/31-intro-to-sensors.html"><font size="4">Return to Lesson</font></a><br /><br /><br /></div>
+
+<div style="text-align:left;"><div style="height: 10px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-highlight" href="https://translate.google.com/" target="_blank">
+<span class="wsite-button-inner">Translator</span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div>
+</div>
+</div>
+		</div>
+	</div>
+</div>
+<div id="footer-wrap">
+	<div id="page">
+		<div id="footer">
+
+<style type="text/css">
+	@font-face {
+		font-family: SQMarket-Medium;
+		font-style: normal;
+		font-weight: 500;
+		src:
+			url("//cdn2.editmysite.com/fonts/SQ_Market/sqmarket-medium.woff2") format("woff2"),
+			url("//cdn2.editmysite.com/fonts/SQ_Market/sqmarket-medium.woff") format("woff");
+	}
+</style>
+
+<div id="weebly-footer-signup-container-v3">
+	<a
+		href="https://www.weebly.com/signup?utm_source=internal&utm_medium=footer"
+		target="_blank"
+		class="signup-container-header"
+		id="signup-link-href"
+	>
+		<div class="powered-by">
+			<div class="footer-published-ab-powered-by">
+				Powered by <span class="link weebly-icon"></span>
+				<img class="footer-ab-published-toast-image" src="//cdn2.editmysite.com/images/site/footer/footer-toast-published-image-1.png">
+				<span class="footer-ab-published-toast-text">Create your own unique website with customizable templates.</span>
+				<span class="footer-ab-published-toast-button-wrapper">
+					<button class="footer-published-ab-button">Get Started</button>
+				</span>
+			</div>
+		</div>
+	</a>
+</div>
+
+<script type="text/javascript" src="//cdn2.editmysite.com/js/site/footerSignup.js?buildTime=1685729699"></script>
+<script type="text/javascript">
+	if (document.readystate === 'complete') {
+		Weebly.footer.setupContainer('cdn2.editmysite.com', '1685729699');
+	} else {
+		document.addEventListener('DOMContentLoaded', function() {
+			Weebly.footer.setupContainer('cdn2.editmysite.com', '1685729699');
+		});
+	}
+</script>
+
+<script type='text/javascript'>
+//<!--
+
+if (document.cookie.match(/(^|;)\s*is_mobile=1/)) {
+	var windowHref = window.location.href || '';
+	if (windowHref.indexOf('?') > -1) {
+		windowHref += '&';
+	} else {
+		windowHref += '?';
+	}
+	windowHref = windowHref.replace(/'/g, "%27");
+	document.write(
+		"&nbsp;&nbsp;&nbsp;&nbsp;" +
+		"<a class='wsite-view-link-mobile' href='" + windowHref + "view=mobile'>Mobile Site</a>"
+	);
+}
+
+//-->
+</script></div>
+	</div>
+</div>
+
+		<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-7870337-1']);
+	_gaq.push(['_setDomainName', 'none']);
+	_gaq.push(['_setAllowLinker', true]);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// NOTE: keep the [1] if you replace this code. Otherwise cookie banner scripts won't be first on the page
+		var s = document.getElementsByTagName('script')[1]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	_W.Analytics = _W.Analytics || {'trackers': {}};
+	_W.Analytics.trackers.wGA = '_gaq';
+</script>
+
+<script type="text/javascript" async=1>
+	// NOTE: keep the getElementsByTagName(o)**[1]** if you replace this code. Otherwise cookie banner scripts won't be first on the page
+	;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+			p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+			};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[1];n.async=1;
+			n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,'script','//cdn2.editmysite.com/js/wsnbn/snowday262.js','snowday'));
+
+	var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109];
+	var snPlObR = function(arr) {
+		var s = '';
+		for (var i = 0 ; i < arr.length ; i++){
+			s = s + String.fromCharCode(arr[i]);
+		}
+		return s;
+	};
+	var s = snPlObR(r);
+
+	var regEx = new RegExp(s);
+
+	_W.Analytics = _W.Analytics || {'trackers': {}};
+	_W.Analytics.trackers.wSP = 'snowday';
+	_W.Analytics.user_id = '37549473';
+	_W.Analytics.site_id = '149932238964773696';
+
+	var drSegmentsTag = document.getElementById('drSegments');
+	if (drSegmentsTag) {
+		_W.Analytics.spContexts = _W.Analytics.spContexts || [];
+
+		var segmentData = JSON.parse(drSegmentsTag.innerText);
+		segmentData.forEach(function(test) {
+			_W.Analytics.spContexts.push({
+				schema: "iglu:com.weebly/context_ab_segment/jsonschema/1-0-0",
+				data: {
+					test_id: test.name,
+					segment: test.variant,
+				}
+			});
+		});
+	}
+
+
+	(function(app_id, ec_hostname, discover_root_domain) {
+		var track = window[_W.Analytics.trackers.wSP];
+		if (!track) return;
+		track('newTracker', app_id, ec_hostname, {
+			appId: app_id,
+			post: true,
+			platform: 'web',
+			discoverRootDomain: discover_root_domain,
+			cookieName: '_snow_',
+			contexts: {
+				webPage: true,
+				performanceTiming: true,
+				gaCookies: true
+			},
+			crossDomainLinker: function (linkElement) {
+				return regEx.test(linkElement.href);
+			},
+			respectDoNotTrack: true
+		});
+		track('trackPageView', _W.Analytics.user_id+':'+_W.Analytics.site_id, _W.Analytics.spContexts);
+		track('crossDomainLinker', function (linkElement) {
+			return regEx.test(linkElement.href);
+		});
+	})(
+		'_wn',
+		'ec.editmysite.com',
+		false
+	);
+</script>
+
+
+
+
+
+<script>
+	(function(jQuery) {
+		try {
+			if (jQuery) {
+				jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
+				var $commentFrame = jQuery('#commentArea iframe');
+				if ($commentFrame.length > 0) {
+					var frameHeight = jQuery($commentFrame[0].contentWindow.document).height() + 50;
+					$commentFrame.css('min-height', frameHeight + 'px');
+				}
+				if (jQuery('.product-button').length > 0){
+					jQuery(document).ready(function(){
+						jQuery('.product-button').parent().each(function(index, product){
+							if(jQuery(product).attr('target') == 'paypal'){
+								if (!jQuery(product).find('> [name="bn"]').length){
+									jQuery('<input>').attr({
+										type: 'hidden',
+										name: 'bn',
+										value: 'DragAndDropBuil_SP_EC'
+									}).appendTo(product);
+								}
+							}
+						});
+					});
+				}
+			}
+			else {
+				// Prototype
+				$$('div.blog-social div.fb-like').each(function(div) {
+					div.className = 'blog-social-item blog-fb-like';
+				});
+				$$('#commentArea iframe').each(function(iframe) {
+					iframe.style.minHeight = '410px';
+				});
+			}
+		}
+		catch(ex) {}
+	})(window._W && _W.jQuery);
+</script>
+
+<script>
+	window._W.isEUUser = false;
+	window._W.showCookieToAll = "";
+</script>
+
+
+	</body>
+</html>
